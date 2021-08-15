@@ -22,3 +22,10 @@ const routes = new Router({
 
 // Load Events
 jQuery(document).ready(() => routes.loadEvents());
+
+import { library, dom } from '@fortawesome/fontawesome-svg-core';
+import { faFacebook, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
+library.add(faFacebook, faTwitter, faSearch);
+
+dom.watch();
